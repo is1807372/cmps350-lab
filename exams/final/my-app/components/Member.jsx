@@ -2,10 +2,10 @@
 
 import { SquareCheckBig, Square, SquareX } from "lucide-react";
 
-export default function Task({ task, callback }) {
+export default function Member({ member, callback }) {
   async function handleToggle(event) {
     // event.preventDefault();
-    const response = await fetch(`/api/${task.project}/${task.id}`, {
+    const response = await fetch(`/api/${me.project}/${task.id}`, {
       method: "PATCH",
       body: JSON.stringify({
         completed: !task.completed,
